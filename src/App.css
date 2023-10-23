@@ -1,38 +1,82 @@
 .App {
+  max-width: 60vw;
+  min-height: 100vh;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  background-color: rgb(170, 180, 180);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-list {
+  max-width: 90%;
+  margin: 0 auto;
+  /* border: 2px solid black; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-todo {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.edit-todo {
+  display: flex;
+  margin-bottom: 10px;
+}
+.edit-todo input {
+  margin: 5px;
+  width: 695px;
+  flex: 1;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.todos-container {
+  max-width: 100%;
+  /* border: 2px solid red; */
+}
+.todo-item {
+  display: flex;
+  background-color: rgba(199, 199, 204, 0.7);
+  border-radius: 5px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  max-width: 97%;
+}
+
+.todo-content {
+  display: flex;
+}
+.todo-content h5 {
+  width: 695px;
+  margin: 10px 0px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
